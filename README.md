@@ -21,8 +21,8 @@
   ...
    "scripts": {
      ...pre existing scripts,
-     "env": "expo-env development",
-     "env:prod": "expo-env prod"
+     "env": "expo-env --env=development",
+     "env:prod": "expo-env --env=prod"
    }
   ...
 ```
@@ -37,5 +37,10 @@ module.exports = {
 ```
 
 You would be getting the above config/ENV vars inside your application if you use `Expo.Constants.manifest.extra` to get those values.
+
+## Options / Arguments
+* `--env=[env]`: Specifies the environment config to be picked up. (_default_: __`development`__)
+* `--configDir=[path]`: The path to all the `env` files. _for ex._ `--configDir=./config` will look into the `config` folder. (_default_: __`./`__)
+* `--template=[templatename]`: The Name postfix for the env files. _i.e_ [env].[templatename]. If values passed is `.env.js` it will look for `[env].env.js` in the `configDir`. (_default_: __`config.js`__)
 
 ### Thank You!
