@@ -1,0 +1,13 @@
+{
+  "name": "expo-env",
+  "version": "1.0.0",
+  "description": "Multiple environment solution for Expo based React Native apps",
+  "main": "index.js",
+  "repository": "git@github.com:manoj-nama/expo-env.git",
+  "author": "Manoj Nama <manoj.nama@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  },
+  "bin": "./index.js"
+}
